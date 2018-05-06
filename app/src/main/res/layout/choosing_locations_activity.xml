@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/choosingLocationsActivityLocationSpinner"
+        android:layout_width="326dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/choosingLocationsActivityAddLocationButton"
+        android:layout_width="165dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:text="Add Location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/choosingLocationsActivityAddFavoriteLocationButton"
+        android:layout_width="165dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="16dp"
+        android:text="Add Location from Favorites"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/choosingLocationsActivityRemoveSelectedLocationButton"
+        android:layout_width="165dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:text="Remove Selected Location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosingLocationsActivityAddLocationButton" />
+
+    <Button
+        android:id="@+id/choosingLocationsActivityRemoveAllLocationsButton"
+        android:layout_width="165dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="8dp"
+        android:text="Clear All locations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosingLocationsActivityAddFavoriteLocationButton" />
+
+    <Button
+        android:id="@+id/choosingLocationsActivityStartSearch"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Start Search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="340dp"
+        android:layout_height="302dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="192dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/choosingLocationsActivityTableLayout"
+            android:layout_width="350dp"
+            android:layout_height="307dp"
+            android:isScrollContainer="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/choosingLocationsActivityRemoveLastLocationButton"></TableLayout>
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>
